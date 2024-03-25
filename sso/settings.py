@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #3rd party
     'django.contrib.sites',
+    'crispy_forms',
     #all auth
     'allauth',
     'allauth.account',
@@ -167,3 +168,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'home'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'login'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
